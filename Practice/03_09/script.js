@@ -23,4 +23,11 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  newBackpackName: function (newName) {
+    this.name = newName;
+  },
 };
+
+console.log(`this is the name before: ${backpack.name}`);
+backpack.newBackpackName("Everyweek backpack");
+console.log(`this is the name after: ${backpack.name}`);
